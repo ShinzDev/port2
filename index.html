@@ -17,6 +17,8 @@
 nav {
     background-color: #333;
     overflow: hidden;
+    position: sticky;
+    top: 0;
   }
   
   nav ul {
@@ -38,6 +40,7 @@ nav {
     padding: 19px 16px;
     text-decoration: none;
     margin-right: 70px;
+    
 
   }
   
@@ -45,7 +48,14 @@ nav {
     background-color: #111;
   }
   
+    .sticky{
+        position: sticky;
+        top: 0;
+    }
   
+
+
+
   @media screen and (max-width: 600px) {
     nav ul {
       float: none;
@@ -68,11 +78,13 @@ nav {
     <header><h1>My html Checkpoint</h1></header>
     <nav>
         <ul>
-            <li><a href="#section0 ">Home</a></li>
-            <li><a href="#section1 ">About</a></li>
-            <li><a href="#section2">Work</a></li>
-            <li><a href="resume">Resume</a></li>
-            <li><a href="#section4">Contact</a></li>
+            <div class="sticky" >
+                <li><a href="#section0 ">Home</a></li>
+                <li><a href="#section1 ">About</a></li>
+                <li><a href="#section2">Work</a></li>
+                <li><a href="resume">Resume</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </div>
         </ul>
     </nav>
 
